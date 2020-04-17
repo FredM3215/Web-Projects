@@ -9,7 +9,7 @@ body {
   background: rgba(128,0,128,0.8);
   width: 50%;
   margin: auto;
-  padding: 20px 40px 20px 40px;
+  padding: 30px 40px 20px 40px;
   color: white;
   font-size: 16px;
 }
@@ -18,7 +18,7 @@ body {
   text-align: center;
   color: white;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 select {
@@ -74,7 +74,9 @@ input[type=radio] {
 }
 
 .comment-box {
-  height: 100px;
+  width: 100%;
+  font-family: Verdana;
+  font-size: 14px;
 }
 
 h1 {
@@ -94,7 +96,7 @@ h1 {
       
       <label for="name">Name</label>
       <div class="input-section">
-      <input type="text" placeholder="Enter your name">
+      <input id="name" type="text" placeholder="Enter your name" required>
       </div>
 
       <label for="email">Email</label>
@@ -151,7 +153,7 @@ h1 {
 
       Any comments or suggestions?<br>
       <div class="comment-section">
-      <input class="comment-box" type="text" placeholder="Enter your comment here..."><br>
+      <textarea class="comment-box" rows="6" placeholder="Enter your comment here..."></textarea><br>
       </div>
       
       <div>
